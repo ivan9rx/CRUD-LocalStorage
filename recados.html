@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/rec.css">
+</head>
+
+<body>
+
+    <h2 style=" font-family: 'Roboto', sans-serif;">Cadastro de dívidas</h2>
+
+    <div>
+        <form id="infos-prod">
+            <label for="name">Nome do cliente: </label>
+            <input type="text" id="nome" name="nome" placeholder="Francisco Rogervaldo">
+
+            <label for="preco">Preço à pagar: </label>
+            <input type="number" name="preco" id="preco" placeholder="R$ 200,00">
+
+            <input type="checkbox" name="prime" id="prime">
+            <label for="prime">Passou de 30 dias?</label> <br> <br>
+            <input type="hidden" id="idx" value="novo" name="idx" />
+            <input type="submit" value="salvar">
+            <input type="button" id="sair" value="sair">
+        </form>
+
+        
+
+    </div>
+
+    <br> <br>
+
+    <div id="tabble">
+        <table>
+
+            <caption>
+                <h2 style=" font-family: 'Roboto', sans-serif;">Lista de Devedores</h2>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th>Identificador</th>
+                    <th>Nome do Cliente</th>
+                    <th>Dívida Total</th>
+                    <th>Mais de 30 dias?</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/rec.js"></script>
+
+
+</body>
+
+</html>
